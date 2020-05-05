@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{
+border-size:box-sizing;
+}
+body{
+  background-image:url("https://watermark.lovepik.com/photo/40134/3463.jpg_wh1200.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+h1{
+  text-align:center;
+  margin-top:60px;
+}
+#description{
+  text-align:center;
+}
+form{
+  padding:5%;
+  max-width:70%;
+  margin:auto;  
+  background-color:rgba(255, 168, 145,0.8);
+  line-height:1.5em;
+  border-radius:20px;
+  box-shadow:5px 5px rgba(244, 244, 244,0.2);  
+}
+#name, #email, #number, textarea, #dropdown{
+  display:block;
+  width:100%;
+  height:1.4em;
+  margin:auto;
+  margin-bottom:-15px;
+  border-radius:5px;
+  text-indent:10px;
+  
+}
+#dropdown{
+  display:block;
+  width:100%;
+  height:2em;
+}
+button{
+  display:block;
+  width:100%;
+  background-color:orange;
+  border:1px solid orange;
+  height:2em;
+}
+  
+</style>
+</head>
+<body>
+<h1 id="title">freeCodeCamp Survey Form</h1>
+<p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+<form id="survey-form">
+  <label id="name-label">Name<br>
+  <input type="text" id="name" placeholder="Enter your name" name="nameinput" required></label><br>
+  <label id="email-label">Email<br>
+  <input type="email" id="email" name="emailinput" placeholder="Enter your email" required></label><br>
+  <label id="number-label">Age(optional)<br>
+  <input type="number" id="number" name="ageinput" placeholder="Age" min="1" max="120"></label><br>
+  <label for="dropdown">which option describes your current role?</label><br>
+  <select id="dropdown" name="occupation" >
+    <option value="student">student</option>
+    <option value="full time job">full time job</option>
+    <option value="prefer not to say" selected>prefer not to say</option>
+    <option value="other">other</option>
+  </select><br>
+  <feildset>
+     <lengend>would you recommend freeCodeCamp to a friend?</lengend><br>
+     <label>
+     <input type="radio" name="mind" value="definitely">
+     Definitely</label><br>
+     <label>
+     <input type="radio" name="mind" value="maybe">
+     Maybe</label><br>
+     <label>
+     <input type="radio" name="mind" value="not sure">
+     Not sure</label><br>
+  </fieldset>
+  <label>what would you like to see improved?<small>(Check all that apply)</small></label><br>
+  <label>
+  <input type="checkbox" value="improve" name="improve">
+  front-end Projects</label><br>
+  <label>
+  <input type="checkbox" value="improve" name="improve">
+  Back-end Projects</label><br>
+  <label>
+   <input type="checkbox" value="improve" name="improve">
+  full-end Projects</label><br>
+  <label>Any comments or suggestions?</label>
+  <textarea placeholder="Enter your comment here..." style="width:100%;height:auto; resize:vertical;overflow-x:hidden;" ></textarea><br>
+  <button id="submit" >submit</button>
+</form>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
+    
+    
